@@ -1,0 +1,23 @@
+<block>
+  <name>Cvcv</name>
+  <key>beamforming_cvcv</key>
+  <category>BEAMFORMING</category>
+  <import>import beamforming</import>
+  <make>beamforming.cvcv($fft_len)</make>
+  <param>
+    <name>Fft_len</name>
+    <key>fft_len</key>
+    <value>64</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$fft_len</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <vlen>$fft_len</vlen>
+  </source>
+</block>

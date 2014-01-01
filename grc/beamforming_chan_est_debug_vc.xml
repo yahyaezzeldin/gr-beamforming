@@ -1,0 +1,18 @@
+<block>
+  <name>Chan est debug vc</name>
+  <key>beamforming_chan_est_debug_vc</key>
+  <category>BEAMFORMING</category>
+  <import>import beamforming</import>
+  <make>beamforming.chan_est_debug_vc($fft_len)</make>
+  <param>
+    <name>fft_len</name>
+    <key>fft_len</key>
+    <value> 64</value>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$fft_len</vlen>
+  </sink>
+</block>
